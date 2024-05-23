@@ -19,7 +19,7 @@ export default function Home() {
     useEffect(() => {
         const fetchUserData = async () => {
             try {
-                const response = await axios.get('/api/auth',
+                const response = await axios.get('http://157.10.53.52:5000/api/auth',
                     {
                         headers: {
                             Authorization: `Bearer ${token}`
